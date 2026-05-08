@@ -1,0 +1,29 @@
+[
+  {
+    "id": "plant-monstera",
+    "name": "Monstera",
+    "location": "Obývačka",
+    "wateringIntervalDays": 7,
+    "note": "Potrebuje nepriame svetlo.",
+    "createdAt": "2026-05-01T10:00:00.000Z",
+    "updatedAt": "2026-05-01T10:00:00.000Z"
+  },
+  {
+    "id": "plant-orchidea",
+    "name": "Orchidea",
+    "location": "Spálňa",
+    "wateringIntervalDays": 10,
+    "note": "Polievať menším množstvom vody.",
+    "createdAt": "2026-05-01T10:05:00.000Z",
+    "updatedAt": "2026-05-01T10:05:00.000Z"
+  },
+  {
+    "id": "plant-fikus",
+    "name": "Fikus",
+    "location": "Kancelária",
+    "wateringIntervalDays": 5,
+    "note": "Nemá rád prievan.",
+    "createdAt": "2026-05-01T10:10:00.000Z",
+    "updatedAt": "2026-05-01T10:10:00.000Z"
+  }
+]
