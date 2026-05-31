@@ -46,6 +46,7 @@ server/
     index.js
   package.json
 ```
+
 ## Run backend
 
 ```bash
@@ -58,7 +59,11 @@ npm run dev
 
 ```bash
 http://localhost:3000
-Run frontend
+```
+
+## Run frontend
+
+```bash
 cd client
 npm install
 npm run dev
