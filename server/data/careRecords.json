@@ -11,11 +11,11 @@
   {
     "id": "care-orchidea-1",
     "plantId": "plant-orchidea",
-    "performedAt": "2026-05-03",
+    "performedAt": "2026-05-31",
     "careType": "watering",
     "note": "Použitá odstáta voda.",
     "createdAt": "2026-05-03T08:00:00.000Z",
-    "updatedAt": "2026-05-03T08:00:00.000Z"
+    "updatedAt": "2026-05-31T21:21:08.852Z"
   },
   {
     "id": "care-fikus-1",

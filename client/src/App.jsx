@@ -10,13 +10,13 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div>
-          <h1>Plant Care App</h1>
+          <h1><span className="app-logo">🌿</span> Plant Care App</h1>
           <p>Jednoduchá aplikácia na evidenciu rastlín a záznamov starostlivosti.</p>
         </div>
 
         <nav className="navigation">
-          <NavLink to="/plants">Rastliny</NavLink>
-          <NavLink to="/care-records">Záznamy starostlivosti</NavLink>
+          <NavLink to="/plants">🌱 Rastliny</NavLink>
+          <NavLink to="/care-records">📝 Záznamy starostlivosti</NavLink>
         </nav>
       </header>
 

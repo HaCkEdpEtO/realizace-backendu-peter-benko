@@ -49,7 +49,7 @@ function PlantListPage() {
         </div>
 
         <Link className="button primary" to="/plants/new">
-          Pridať rastlinu
+          ➕ Pridať rastlinu
         </Link>
       </div>
 

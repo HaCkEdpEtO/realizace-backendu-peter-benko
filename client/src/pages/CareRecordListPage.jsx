@@ -71,7 +71,7 @@ function CareRecordListPage() {
         </div>
 
         <Link className="button primary" to="/care-records/new">
-          Pridať záznam
+          ➕ Pridať záznam
         </Link>
       </div>
 
@@ -104,7 +104,7 @@ function CareRecordListPage() {
               <th>Rastlina</th>
               <th>Typ</th>
               <th>Poznámka</th>
-              <th>Akcie</th>
+              <th className="actions-column">Akcie</th>
             </tr>
           </thead>
           <tbody>
@@ -114,7 +114,7 @@ function CareRecordListPage() {
                 <td>{plantNameMap[careRecord.plantId] || careRecord.plantId}</td>
                 <td>{getCareTypeLabel(careRecord.careType)}</td>
                 <td>{careRecord.note || "Bez poznámky."}</td>
-                <td>
+                <td className="actions-column">
                   <div className="button-row">
                     <Link className="button" to={`/care-records/${careRecord.id}/edit`}>
                       Upraviť

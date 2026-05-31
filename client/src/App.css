@@ -12,7 +12,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #f4f8f0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(63, 125, 63, 0.12) 0 110px, transparent 112px),
+    radial-gradient(circle at 88% 20%, rgba(63, 125, 63, 0.10) 0 130px, transparent 132px),
+    radial-gradient(circle at 78% 88%, rgba(207, 224, 200, 0.55) 0 170px, transparent 172px),
+    #f4f8f0;
 }
 
 a {
@@ -29,6 +33,45 @@ textarea {
 
 .app {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.app::before,
+.app::after {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.06;
+  filter: saturate(0.9);
+}
+
+.app::before {
+  content: "🌿";
+  left: -30px;
+  top: 170px;
+  font-size: 210px;
+  transform: rotate(-22deg);
+}
+
+.app::after {
+  content: "🪴";
+  right: 36px;
+  bottom: 28px;
+  font-size: 190px;
+  transform: rotate(10deg);
+}
+
+.app-header,
+.app-main {
+  position: relative;
+  z-index: 1;
+}
+
+.app-logo {
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .app-header {
@@ -288,6 +331,19 @@ tr:last-child td {
   border-bottom: none;
 }
 
+th.actions-column,
+td.actions-column {
+  width: 300px;
+  text-align: left;
+  white-space: nowrap;
+  padding-left: 64px;
+}
+
+td.actions-column .button-row {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
 @media (max-width: 760px) {
   .app-header,
   .page-header {
@@ -306,5 +362,16 @@ tr:last-child td {
   .navigation a {
     width: 100%;
     text-align: center;
+  }
+
+  th.actions-column,
+  td.actions-column {
+    width: auto;
+    text-align: left;
+  }
+
+  td.actions-column .button-row {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
