@@ -1,6 +1,7 @@
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { careRecordApi, plantApi } from "../api.js";
+import { CARE_TYPE_OPTIONS } from "../careTypeLabels.js";
 
 const emptyForm = {
   plantId: "",
@@ -139,11 +140,11 @@ function CareRecordFormPage() {
         <label>
           Typ starostlivosti
           <select name="careType" value={form.careType} onChange={handleChange} required>
-            <option value="watering">Polievanie</option>
-            <option value="fertilizing">Hnojenie</option>
-            <option value="repotting">Presádzanie</option>
-            <option value="pruning">Strihanie</option>
-            <option value="other">Iné</option>
+            {CARE_TYPE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                {option.label}
+                </option>
+            ))}
           </select>
         </label>
 

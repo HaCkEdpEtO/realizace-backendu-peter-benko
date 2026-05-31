@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { plantApi } from "../api.js";
+import { getCareTypeLabel } from "../careTypeLabels.js";
 
 function PlantDetailPage() {
   const { id } = useParams();
@@ -101,7 +102,7 @@ function PlantDetailPage() {
             {(plant.careRecordList || []).map((careRecord) => (
               <tr key={careRecord.id}>
                 <td>{careRecord.performedAt}</td>
-                <td>{careRecord.careType}</td>
+                <td>{getCareTypeLabel(careRecord.careType)}</td>
                 <td>{careRecord.note || "Bez poznámky."}</td>
               </tr>
             ))}

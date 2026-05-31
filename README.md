@@ -1,17 +1,43 @@
-# Plant Care App - Backend
+# Plant Care App
 
-Backend for BCAA Homework assignment Backend (#3).
+Plant Care App is a simple application for managing house plants and their care records.
+
+The application was created for BCAA Homework assignments Backend (#3) and Frontend (#4).
+
+## Application entities
 
 The application stores two related entities:
 
 - Plant
 - CareRecord
 
-The backend is implemented in Node.js + Express.js and stores data in JSON files.
+A plant can have multiple care records. Care records are used mainly for watering, fertilizing, repotting, pruning and other plant care activities.
+
+## Technology stack
+
+Backend:
+
+- Node.js
+- Express.js
+- JSON files as simple persistent data storage
+
+Frontend:
+
+- React
+- Vite
+- React Router
 
 ## Repository structure
 
 ```bash
+client/
+  src/
+    pages/
+    constants/
+    api.js
+    App.jsx
+  package.json
+
 server/
   data/
     plants.json
@@ -20,8 +46,7 @@ server/
     index.js
   package.json
 ```
-
-## Run locally
+## Run backend
 
 ```bash
 cd server
@@ -29,28 +54,53 @@ npm install
 npm run dev
 ```
 
-## The backend runs on:
+## Backend runs on:
 
 ```bash
 http://localhost:3000
+Run frontend
+cd client
+npm install
+npm run dev
 ```
 
-## Check syntax
+## Frontend runs on:
+
+```bash
+http://localhost:5173
+```
+
+## Checks
+
+Backend syntax check:
 
 ```bash
 cd server
 npm run check
 ```
 
-## Data storage
-
-The backend uses JSON files as a simple persistent data storage:
+Frontend lint and build:
 
 ```bash
-server/data/plants.json
-server/data/careRecords.json
+cd client
+npm run lint
+npm run build
 ```
 
+## Frontend routes
+
+```bash
+/                         redirects to /plants
+/plants                   plant list
+/plants/new               create plant
+/plants/:id               plant detail
+/plants/:id/edit          update plant
+/care-records             care record list
+/care-records/new         create care record
+/care-records/:id/edit    update care record
+```
+
+## Backend endpoints
 ## Health check
 
 ```bash
@@ -78,13 +128,11 @@ POST /careRecord/update
 POST /careRecord/delete
 ```
 
-## Example URLs
+## Data storage
+
+Backend stores data in JSON files:
 
 ```bash
-http://localhost:3000/health
-http://localhost:3000/plant/list
-http://localhost:3000/plant/get?id=plant-monstera
-http://localhost:3000/careRecord/list
-http://localhost:3000/careRecord/list?plantId=plant-monstera
-http://localhost:3000/careRecord/get?id=care-monstera-1
+server/data/plants.json
+server/data/careRecords.json
 ```

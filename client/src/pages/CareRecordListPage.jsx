@@ -4,6 +4,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { careRecordApi, plantApi } from "../api.js";
+import { getCareTypeLabel } from "../careTypeLabels.js";
 
 function CareRecordListPage() {
   const [plantList, setPlantList] = useState([]);
@@ -111,7 +112,7 @@ function CareRecordListPage() {
               <tr key={careRecord.id}>
                 <td>{careRecord.performedAt}</td>
                 <td>{plantNameMap[careRecord.plantId] || careRecord.plantId}</td>
-                <td>{careRecord.careType}</td>
+                <td>{getCareTypeLabel(careRecord.careType)}</td>
                 <td>{careRecord.note || "Bez poznámky."}</td>
                 <td>
                   <div className="button-row">
