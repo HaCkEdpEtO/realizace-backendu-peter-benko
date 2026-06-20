@@ -2,37 +2,46 @@
   {
     "id": "care-monstera-1",
     "plantId": "plant-monstera",
-    "performedAt": "2026-04-24",
+    "performedAt": "2026-06-10",
     "careType": "watering",
     "note": "Zaliata po preschnutí substrátu.",
-    "createdAt": "2026-04-24T08:00:00.000Z",
-    "updatedAt": "2026-04-24T08:00:00.000Z"
+    "createdAt": "2026-06-10T08:00:00.000Z",
+    "updatedAt": "2026-06-10T08:00:00.000Z"
+  },
+  {
+    "id": "care-monstera-2",
+    "plantId": "plant-monstera",
+    "performedAt": "2026-06-15",
+    "careType": "fertilizing",
+    "note": "Jarné hnojenie.",
+    "createdAt": "2026-06-15T08:10:00.000Z",
+    "updatedAt": "2026-06-15T08:10:00.000Z"
   },
   {
     "id": "care-orchidea-1",
     "plantId": "plant-orchidea",
-    "performedAt": "2026-05-31",
+    "performedAt": "2026-06-20",
     "careType": "watering",
     "note": "Použitá odstáta voda.",
-    "createdAt": "2026-05-03T08:00:00.000Z",
-    "updatedAt": "2026-05-31T21:21:08.852Z"
+    "createdAt": "2026-06-20T08:00:00.000Z",
+    "updatedAt": "2026-06-20T08:00:00.000Z"
   },
   {
     "id": "care-fikus-1",
     "plantId": "plant-fikus",
-    "performedAt": "2026-04-28",
+    "performedAt": "2026-06-15",
     "careType": "watering",
     "note": "Bežné zaliatie.",
-    "createdAt": "2026-04-28T08:00:00.000Z",
-    "updatedAt": "2026-04-28T08:00:00.000Z"
+    "createdAt": "2026-06-15T08:00:00.000Z",
+    "updatedAt": "2026-06-15T08:00:00.000Z"
   },
   {
     "id": "care-fikus-2",
     "plantId": "plant-fikus",
-    "performedAt": "2026-04-28",
-    "careType": "fertilizing",
-    "note": "Jarné hnojenie.",
-    "createdAt": "2026-04-28T08:10:00.000Z",
-    "updatedAt": "2026-04-28T08:10:00.000Z"
+    "performedAt": "2026-06-18",
+    "careType": "pruning",
+    "note": "Odstránené suché listy.",
+    "createdAt": "2026-06-18T08:10:00.000Z",
+    "updatedAt": "2026-06-18T08:10:00.000Z"
   }
 ]
